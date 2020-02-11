@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testsuit01">
+	<listeners>
+		<listener class-name="com.abc.utilities.Reporting"/>
+	</listeners>
+  <test thread-count="5" name="LoginTest">
+  	<parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.abc.testCases.TC_Login_01"/>
+      <class name="com.abc.testCases.TC_Login_02"/>
+      <class name="com.abc.testCases.TC_Login_03"/>
+      <class name="com.abc.testCases.TC_Login_04"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Testsuit01 -->
