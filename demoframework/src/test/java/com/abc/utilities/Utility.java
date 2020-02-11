@@ -52,7 +52,11 @@ public class Utility {
 			options.ignoreZoomSettings();
 			driver = new InternetExplorerDriver(options);
 			driver.get(url);
-			driver.navigate ().to ("javascript:document.getElementById('overridelink').click()");
+			try {
+				driver.navigate ().to ("javascript:document.getElementById('overridelink').click()");
+			}catch(Exception e) {
+				
+			}
 			
 		}else {
 			throw new Exception("The Browser '"+ browser +" is not correct'. It is not 'chrome' or 'firefox' or 'ie'");
