@@ -11,8 +11,10 @@ public class TC_Login_01 extends BaseClass{
 	public void TCLogin01() {	
 		LoginPage lp = new LoginPage(driver);
 		lp.login("mngr245325", "EnaqEmA");
+		
 		Log.info("Entered username and password!");
 		System.out.println(driver.getTitle());
-		Log.info("Done");
+		
+		Log.info("Done!!!");
 	}
 }
