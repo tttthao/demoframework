@@ -69,7 +69,7 @@ public class Utility {
 	}
 	
 	public static String captureScreenshot(WebDriver driver, String screenshotName) throws IOException {
-		String dateName = new SimpleDateFormat("yyyyMMdd.hhmmss").format(new Date());
+		String dateName = new SimpleDateFormat("yyyyMMdd.HHmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String screenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+screenshotName+"_"+dateName+".png";
