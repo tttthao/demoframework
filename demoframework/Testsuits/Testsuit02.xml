@@ -5,7 +5,7 @@
 		<listener class-name="com.abc.utilities.Reporting"/>
 	</listeners>
   <test thread-count="5" name="LoginTest2">
-  	<parameter name="Browser" value="ie"></parameter>
+  	<parameter name="Browser" value="chrome"></parameter>
     <classes>
       <class name="com.abc.testCases.TC_Login_06"/>
       <class name="com.abc.testCases.TC_Login_07"/>

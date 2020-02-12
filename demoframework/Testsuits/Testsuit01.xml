@@ -5,12 +5,12 @@
 		<listener class-name="com.abc.utilities.Reporting"/>
 	</listeners>
   <test thread-count="5" name="LoginTest">
-  	<parameter name="Browser" value="chrome"></parameter>
+  	<parameter name="Browser" value="ie"></parameter>
     <classes>
       <class name="com.abc.testCases.TC_Login_01"/>
-      <class name="com.abc.testCases.TC_Login_02"/>
+<!--       <class name="com.abc.testCases.TC_Login_02"/>
       <class name="com.abc.testCases.TC_Login_03"/>
-      <class name="com.abc.testCases.TC_Login_04"/>
+      <class name="com.abc.testCases.TC_Login_04"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Testsuit01 -->
