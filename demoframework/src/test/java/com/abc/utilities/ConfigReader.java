@@ -17,5 +17,25 @@ public class ConfigReader {
 	public String getBaseUrl() {
 		return pro.getProperty("baseURL");
 	}
+	
+	public String getUsername() {
+		return pro.getProperty("username");
+	}
+	
+	public String getPassword() {
+		return pro.getProperty("password");
+	}
+	
+	public String getChromePath() {
+		return pro.getProperty("chromepath");
+	}
+	
+	public String getIEPath() {
+		return pro.getProperty("iepath");
+	}
+	
+	public String getFireFoxPath() {
+		return pro.getProperty("firefoxpath");
+	}
 
 }

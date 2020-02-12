@@ -11,15 +11,16 @@ import com.abc.utilities.Utility;
 
 
 public class BaseClass {
+	public ConfigReader configReader = new ConfigReader();
 	public static WebDriver driver;
-	String AppUrl = "https://demo.guru99.com/v4/";
+	
 
 	@Parameters("Browser")
 	@BeforeClass
 	public void setup(String browser) throws Exception {
 		Log.initLog(this.getClass().getName());
 		Log.startLog(this.getClass().getName());
-		driver = Utility.launchBrowserWithUrl(Utility.getBrowser(browser), new ConfigReader().getBaseUrl());
+		driver = Utility.launchBrowserWithUrl(Utility.getBrowser(browser), configReader.getBaseUrl());
 		//cmd run: mvn clean test -DtestngFile=Testsuit01.xml -Dbrowser=chrome
 	}
 	
