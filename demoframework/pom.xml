@@ -31,7 +31,7 @@
 	<dependency>
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
-	    <version>7.0.0</version>
+	    <version>6.14.3</version>
 	    <scope>test</scope>
 	</dependency>
 	
@@ -90,8 +90,8 @@
   			<configuration>
   				<testFailureIgnore>true</testFailureIgnore>
   				<suiteXmlFiles>
-  					<suitXmlFile>Testsuits\\${testngFile}</suitXmlFile>
-  					<!-- <suitXmlFile>Testsuits\\Testsuit01.xml</suitXmlFile> -->
+  					<!-- <suitXmlFile>Testsuits\\${testngFile}</suitXmlFile> -->
+  					<suitXmlFile>Testsuits\\Testsuit02.xml</suitXmlFile>
   				</suiteXmlFiles>
   			</configuration>
   		</plugin>

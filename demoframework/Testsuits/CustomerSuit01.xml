@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CustomerSuite">
+  <listeners>
+		<listener class-name="com.abc.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="CustomerTest">
+  	<parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.abc.testCases.Customer.TC_Customer_01"/>
+    </classes>
+  </test> <!-- CustomerTest -->
+</suite> <!-- CustomerSuite -->
